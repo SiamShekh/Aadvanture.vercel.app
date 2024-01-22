@@ -23,7 +23,7 @@ const AdvanceBanner = () => {
             <div className="m-auto w-full h-full flex-col flex justwify-center items-center text-center xl:mt-[30vh] lg:mt-[30vh] md:mt-[50vh] mt-[50vh]  absolute">
                 <p className="text-center text-white text-5xl sm:text-3xl md:text-5xl xl:text-[100px] 2xl:text-[200px] lg:text-7xl font-bold font-Inter z-10">Discover Adventures</p>
                 <p className="text-white text-[20px] sm:text-1xl 2xl:text-[90px] lg:text-3xl xl:text-5xl md:text-2xl font-normal z-20">
-                    <span className="font-mono 2xl:leading-[100px] lg:leading-3 mr-5 bg-gradient-to-r from-white to-slate-400  text-transparent bg-clip-text">Your Journey Awaits with us!</span>
+                    <span className="font-mono 2xl:leading-[100px] lg:leading-3 mx-5 bg-gradient-to-r from-white to-slate-400 text-center text-transparent bg-clip-text">Your Journey Awaits with us!</span>
                     {/* <span className="font-Ledger mr-5">Awaits</span> */}
                     {/* <span className="font-Lemon 2xl:leading-[100px] lg:leading-3">with Us!</span> */}
                 </p>

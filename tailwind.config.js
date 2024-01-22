@@ -12,7 +12,8 @@ export default {
         'Ledger': 'Ledger, serif',
         'Lemon': 'Lemon, serif',
         'Abhaya-Libre': 'Abhaya Libre, serif',
-        // font-family: 'Abhaya Libre', serif;
+        'Roboto': 'Roboto, sans-serif',
+        'Inria-Serif': 'Inria Serif, serif'
       }
     },
   },
