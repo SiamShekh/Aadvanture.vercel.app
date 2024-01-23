@@ -1,5 +1,6 @@
 import { ParallaxBanner } from "react-scroll-parallax";
 import Line from "../../../assets/Line 4.webp"
+import { TypeAnimation } from "react-type-animation";
 
 const AdvanceBanner = () => {
     const background = {
@@ -21,7 +22,22 @@ const AdvanceBanner = () => {
             //     <h1 className="headline white">Discover Adventures!</h1>
             //   </div>
             <div className="m-auto w-full h-full flex-col flex justwify-center items-center text-center xl:mt-[30vh] lg:mt-[30vh] md:mt-[50vh] mt-[50vh]  absolute">
-                <p className="text-center text-white text-5xl sm:text-3xl md:text-5xl xl:text-[100px] 2xl:text-[200px] lg:text-7xl font-bold font-Inter z-10">Discover Adventures</p>
+                <TypeAnimation
+                    className="text-center text-white text-5xl sm:text-3xl md:text-5xl xl:text-[100px] 2xl:text-[200px] lg:text-7xl font-bold font-Inter z-10"
+                    sequence={[
+                        'Discover Adventures',
+                        2000, 
+                        'Discover Mountain',
+                        2000,
+                        'Discover Forest',
+                        2000,
+                        'Discover River',
+                        2000
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    repeat={Infinity}
+                />
                 <p className="text-white text-[20px] sm:text-1xl 2xl:text-[90px] lg:text-3xl xl:text-5xl md:text-2xl font-normal z-20">
                     <span className="font-mono 2xl:leading-[100px] lg:leading-3 mx-5 bg-gradient-to-r from-white to-slate-400 text-center text-transparent bg-clip-text">Your Journey Awaits with us!</span>
                     {/* <span className="font-Ledger mr-5">Awaits</span> */}
