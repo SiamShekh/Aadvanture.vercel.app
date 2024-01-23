@@ -13,7 +13,10 @@ export default {
         'Lemon': 'Lemon, serif',
         'Abhaya-Libre': 'Abhaya Libre, serif',
         'Roboto': 'Roboto, sans-serif',
-        'Inria-Serif': 'Inria Serif, serif'
+        'Inria-Serif': 'Inria Serif, serif',
+        'Sevillana':'Sevillana, cursive',
+        // font-family: 'Sevillana, cursive';
+
       }
     },
   },

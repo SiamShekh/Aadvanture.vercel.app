@@ -10,13 +10,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import TreeObj from "../../assets/tree_sub.png";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, [])
-
     return (
         <div className=" bg-black">
             <Nav />
@@ -37,7 +37,7 @@ const Home = () => {
                     <div data-aos="fade-right" className="flex w-full justify-between">
                         <div className="w-96 h-fit  2xl:w-[600px] 2xl:h-[400px] bg-[#0B510080] p-5 rounded-2xl m-7 ">
                             <p className="text-2xl 2xl:text-5xl font-bold text-white ">Exciting Adventures For Your Discovery</p>
-                            <p className="font-light text-white 2xl:text-3xl 2xl:mt-10">Step into our realm of curated escapades, where thrill meets exploration. Join us in discovering uncharted territories, embracing the pulse of true adventure.</p>
+                            <p className="font-mono text-white 2xl:text-3xl 2xl:mt-10">Step into our realm of curated escapades, where thrill meets exploration. Join us in discovering uncharted territories, embracing the pulse of true adventure.</p>
 
                             <div className="flex gap-3 items-center 2xl:mt-10">
                                 <p className="font-Roboto font-bold text-[#52FF00] uppercase 2xl:text-3xl text-xl">Learn more</p>
@@ -47,30 +47,32 @@ const Home = () => {
                         <img src={Element} className="hidden opacity-60 md:flex right-0 top-2 h-96 2xl:h-[700px]" />
 
                     </div>
-                    <img src={Pahar} className="-mt-10 md:-mt-36 2xl:-mt-96 w-full" />
+
+                    <img src={Pahar} data-aos="fade-up-right" className="-mt-10 md:-mt-36 2xl:-mt-96 w-full" />
 
                     <div data-aos="fade-right" className="w-full flex justify-center items-center">
-                        <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer p-5 rounded-full">
-                            <p className="font-Robotzo font-semibold text-black uppercase 2xl:text-3xl text-xl">Learn more</p>
+                        <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-2 py-2 rounded-full">
+                            <p className="font-Inter font-semibold text-black uppercase 2xl:text-3xl text-xl">Learn more</p>
                             <div className="bg-black rounded-full">
-                                <img src={Arraw} className="w-5 m-3  h-fit " />
+                                <img src={Arraw} className="w-5 m-2  h-fit " />
                             </div>
                         </div>
                     </div>
 
                     <img src={TreeObj} className="opacity-50 hidden md:-mt-20 h-96 xl:h-[500px] 2xl:h-[700px] md:flex justify-between" />
                     <div data-aos="fade-right" className="flex flex-col justify-center items-center md:-mt-52 lg:-mt-60 xl:-mt-56 2xl:-mt-[530px] mt-10">
-                        <p className="text-center md:text-[40px] text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px]">
-                            <span className="font-Inria-Serif font-bold text-[#DBFFD5]">Adventures </span>
-                            <span className="font-Lemon text-[#DBFFD5]">Await.</span>
-                            <br />
+                        <TypeAnimation
+                            style={{ whiteSpace: 'pre-line', display: 'block' }}
+                            sequence={[
+                                `Adventures Await.\nDiscover Adventures`,
+                                1000,
+                                '',
+                            ]}
+                            className="text-center 2xl:h-[405px] xl:h-[230px] lg:h-[175px] md:h-[130px] sm:h-[100px] h-[80px] md:text-[40px] font-Inter font-bold text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px] bg-gradient-to-bl from-[#DBFFD5] to-[#dbffd56b] bg-clip-text text-transparent"
+                            repeat={Infinity}
+                        />
 
-                            <span className="font-Lemon text-[#DBFFD5]">Discover </span>
-                            <span className="font-Inria-Serif font-bold text-[#DBFFD5]">Adventures </span>
-                            
-                        </p>
-
-                        <p className="lg:w-[832px] md:w-[600px] text-justify opacity-80  mx-5 xl:text-xl 2xl:text-2xl md:text-center text-[#DBFFD5] font-Inter text-sm ">Unlock thrilling escapades worldwide. Immerse yourself in unparalleled journeys tailored to satisfy your wanderlust. Explore, experience, and create unforgettable memories with our expertly crafted adventures.</p>
+                        <p className="lg:w-[832px] md:w-[600px]  opacity-80  mx-5 xl:text-xl 2xl:text-2xl text-center text-[#DBFFD5] font-mono text-sm ">Unlock thrilling escapades worldwide. Immerse yourself in unparalleled journeys tailored to satisfy your wanderlust. Explore, experience, and create unforgettable memories with our expertly crafted adventures.</p>
                     </div>
 
                 </div>
