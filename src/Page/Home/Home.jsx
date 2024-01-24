@@ -8,15 +8,21 @@ import Arraw from "../../assets/Arrow 5.png";
 import Pahar from "../../assets/Group 25.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import TreeObj from "../../assets/tree_sub.png";
 import { TypeAnimation } from "react-type-animation";
-
 const Home = () => {
+    const [SummitState, setSummitState] = useState(false);
+    const [TrekState, setTrekState] = useState(false);
+    const [ExploreState, setExploreState] = useState(false);
+    const [UrbanExploration_State, setUrbanExploration_State] = useState(false);
+    const [Ride_State, setRide_State] = useState(false);
+    const [SkyDriveing_State, setSkyDriveing_State] = useState(false);
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, [])
+
     return (
         <div className=" bg-black">
             <ParallaxProvider>
@@ -78,15 +84,18 @@ const Home = () => {
                         <p className="text-3xl font-Tektur text-center mt-20 font-semibold text-[#EDFFEB]">New Jersey</p>
                         <div className="">
                             <div className="flex justify-center gap-2 md:gap-5 text-[10px] m-5 2xl:text-2xl">
-                                <p className="font-mono px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Summit</p>
-                                <p className="font-mono px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Trek</p>
-                                <p className="font-mono px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Explore</p>
+
+                                <p onMouseLeave={() => setSummitState(!SummitState)} onMouseOver={() => setSummitState(!SummitState)} className="font-mono cursor-pointer px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Summit</p>
+
+                                <p onMouseLeave={() => setTrekState(!TrekState)} onMouseOver={() => setTrekState(!TrekState)} className="font-mono px-3 cursor-pointer md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Trek</p>
+
+                                <p onMouseLeave={() => setExploreState(!ExploreState)} onMouseOver={() => setExploreState(!ExploreState)} className="font-mono px-3 cursor-pointer md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Explore</p>
                             </div>
 
                             <div className="flex justify-center gap-2 md:gap-5 text-[8px] 2xl:text-2xl">
-                                <p className="font-mono px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Urban Exploration</p>
-                                <p className="font-mono px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Ride</p>
-                                <p className="font-mono px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Skydiving Adventure</p>
+                                <p onMouseLeave={() => setUrbanExploration_State(!UrbanExploration_State)} onMouseOver={() => setUrbanExploration_State(!UrbanExploration_State)} className="font-mono cursor-pointer px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Urban Exploration</p>
+                                <p onMouseLeave={() => setRide_State(!Ride_State)} onMouseOver={() => setRide_State(!Ride_State)} className="font-mono cursor-pointer px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Ride</p>
+                                <p onMouseLeave={() => setSkyDriveing_State(!SkyDriveing_State)} onMouseOver={() => setSkyDriveing_State(!SkyDriveing_State)} className="font-mono cursor-pointer px-3 md:px-7 border-[#DBFFD5] text-[#B6FF89] py-1 border-2 w-fit rounded-full">Skydiving Adventure</p>
                             </div>
                         </div>
 
@@ -102,6 +111,42 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className={`-mt-60 ${SummitState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+                        <img data-aos="fade-left" src="https://i.ibb.co/HT9j7cg/Summit-Canva1.webp" className="h-60 rounded-xl" />
+                        <img data-aos="fade-in" src="https://i.ibb.co/hYX1qz6/Summit-Canva2.webp" className="h-60 rounded-xl" />
+                        <img data-aos="fade-right" src="https://i.ibb.co/yBsMF1C/Summit-Canva4.webp" className="h-60 rounded-xl" />
+                    </div>
+
+                    <div className={`-mt-60 ${TrekState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+                        <img data-aos="fade-left" src="https://i.ibb.co/LNzn1rn/Trek3.webp" className="h-60 rounded-xl" />
+                        <img data-aos="fade-in" src="https://i.ibb.co/TWJKLLW/Trek1.webp" className="h-60 rounded-xl" />
+                        <img data-aos="fade-right" src="https://i.ibb.co/Wy51YCw/Trek2.webp" className="h-60 rounded-xl" />
+                    </div>
+
+                    <div className={`-mt-60 ${ExploreState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+                        <img data-aos="fade-left" src="https://images.unsplash.com/photo-1506064549099-34b18723e8c9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXhwbG9yZSUyMHRoZSUyMHdvcmxkfGVufDB8fDB8fHww" className="h-60 rounded-xl" />
+                        <img data-aos="fade-in" src="https://www.rayatourism.com/upload_pics/explore.jpg" className="h-60 rounded-xl" />
+                        <img data-aos="fade-right" src="https://www.203challenges.com/wp-content/uploads/2017/12/nathaniel-kohfield-337185-e1514446401837.jpg" className="h-60 rounded-xl" />
+                    </div>
+
+                    <div className={`-mt-60 ${UrbanExploration_State ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+                        <img data-aos="fade-left" src="https://ipt.imgix.net/205429/x/0/" className="h-60 rounded-xl" />
+                        <img data-aos="fade-in" src="https://cdn.shopify.com/s/files/1/0493/9834/9974/files/8_bc31f69f-4f1a-469e-9303-c93b3220e925_480x480.png" className="h-60 rounded-xl" />
+                        <img data-aos="fade-right" src="https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/leonardcnrs_2_72dpi.jpg" className="h-60 rounded-xl" />
+                    </div>
+
+                    <div className={`-mt-60 ${Ride_State ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+                        <img data-aos="fade-left" src="https://static01.nyt.com/images/2023/07/02/multimedia/29ROLLERCOASTER-02-lwgc/29ROLLERCOASTER-02-lwgc-videoSixteenByNine3000.jpg" className="h-60 rounded-xl" />
+                        <img data-aos="fade-in" src="https://wistatefair.com/fair/wp-content/uploads/2013/04/Kids-Ride-Carousel.jpg" className="h-60 rounded-xl" />
+                        <img data-aos="fade-right" src="https://funfairamusementrides.com.au/images/room-list/ranger-ride-hire-brisbane.jpg" className="h-60 rounded-xl" />
+                    </div>
+
+                    <div className={`-mt-60 ${SkyDriveing_State ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+                        <img data-aos="fade-left" src="https://www.nativeplanet.com/img/2015/07/13-1436778303-ambyvalley1.jpg" className="h-60 rounded-xl" />
+                        <img data-aos="fade-in" src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2017/6/22/0/GettyImages-643320488-palm-jumeirah-skydive-dubai.jpg.rend.hgtvcom.1280.1280.suffix/1498150383633.jpeg" className="h-60 rounded-xl" />
+                        <img data-aos="fade-right" src="https://images.squarespace-cdn.com/content/v1/64302b849cd4ae56340e77db/8f5b1bed-da34-4990-b117-9948d67c7b1b/Adventure+boogie+selection-62.jpg" className="h-60 rounded-xl" />
                     </div>
 
                 </div>
