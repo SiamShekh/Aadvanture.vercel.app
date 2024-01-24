@@ -15,8 +15,8 @@ export default {
         'Roboto': 'Roboto, sans-serif',
         'Inria-Serif': 'Inria Serif, serif',
         'Sevillana':'Sevillana, cursive',
-        // font-family: 'Sevillana, cursive';
-
+        'Genos':'Genos, sans-serif',
+        'Tektur':'Tektur, sans-serif',
       }
     },
   },

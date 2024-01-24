@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from "./Page/Home/Home";
-
+import TOUR from "./Page/Tour/Tour"
+import Inspaire from "./Page/Inspaire/Inspaire"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,7 +17,15 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>
-      }
+      },
+      {
+        path: "tour",
+        element: <TOUR/>
+      },
+      {
+        path: "inspire",
+        element: <Inspaire/>
+      },
     ]
   },
 ]);

@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      {/* <Nav /> */}
+      <Nav />
       <Outlet />
     </>
   )
