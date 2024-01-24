@@ -18,9 +18,21 @@ To install this project run
 ```
 
 
+## Adventure Discover
+
+https://aadventure.vercel.app/
+
+
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/6449pq8/image.png?text=App+Screenshot+Here)
+![Website Screenshot](https://i.ibb.co/6449pq8/image.png?text=App+Screenshot+Here)
+
+
+## Features
+
+- Book a Tour
+- Get Inspire from those already go in tour
+- Made Payment via Banks
 
 
 ## Related
@@ -30,7 +42,29 @@ Here are some related projects
 [Calculator](https://github.com/SiamShekh/Calculator.git)
 
 
-## License
+## Run Locally
 
-[MIT](https://choosealicense.com/licenses/mit/)
+Clone the project
+
+```bash
+  git clone https://github.com/SiamShekh/Aadvanture.vercel.app.git
+```
+
+Go to the project directory
+
+```bash
+  cd Aadvanture.vercel.app
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
 
