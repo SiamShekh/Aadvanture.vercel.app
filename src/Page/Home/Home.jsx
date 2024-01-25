@@ -1,7 +1,6 @@
-import { ParallaxProvider } from "react-scroll-parallax";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import AdvanceBanner from "./Hero/AdvanceBanner";
 import "../../../src/index.css"
-import Nav from "../../Components/Navigations/Nav";
 import ListItem from "./ListItem_Banner/ListItem";
 import Element from "../../assets/eliment.png";
 import Arraw from "../../assets/Arrow 5.png";
@@ -14,6 +13,10 @@ import { TypeAnimation } from "react-type-animation";
 import SloganHere from "../../assets/SloganHere_6.webp"
 import TourPackage from "../../assets/TourPackage.webp"
 import SimpleImageSlider from "react-simple-image-slider";
+import PathaLogo from "../../assets/Qitmeer Logo (11) 1.png";
+import Group30 from "../../assets/Group 30.webp";
+import AdventureAssenHero from "./Hero/AdventureAssenHero";
+import Testimonials from "./Hero/Testimonials";
 
 const Home = () => {
     const [SummitState, setSummitState] = useState(false);
@@ -31,12 +34,6 @@ const Home = () => {
         { url: "https://i.ibb.co/HT9j7cg/Summit-Canva1.webp" },
         { url: "https://i.ibb.co/LNzn1rn/Trek3.webp" },
         { url: "https://www.rayatourism.com/upload_pics/explore.jpg" },
-
-        // { url: "images/3.jpg" },
-        // { url: "images/4.jpg" },
-        // { url: "images/5.jpg" },
-        // { url: "images/6.jpg" },
-        // { url: "images/7.jpg" },
     ];
 
     return (
@@ -46,7 +43,7 @@ const Home = () => {
                 <div className="mt-3">
                     <ListItem />
                 </div>
-                <div className=" w-full">
+                <div className="w-full">
                     <div className="mt-20 2xl:mt-40 text-3xl md:text-6xl 2xl:text-9xl text-center mx-5 md:mx-0">
                         <p className="font-Tektur font-bold text-[#DBFFD5]">Unveil Endless Thrills: <br /></p>
                         <p className="font-Genos text-[#DBFFD5] text-xl md:text-4xl 2xl:text-6xl">
@@ -181,40 +178,70 @@ const Home = () => {
                     </div>
 
                     {/* Tour Package */}
-                    <div className="max-h-screen">
+                    <div className="max-h-screen block">
                         <div className="relative">
-                            <div className="bg-gradient-to-b from-black to-transparent h-screen w-full absolute z-20" />
-                            <img src={TourPackage} className="absolute z-10 w-full object-cover h-screen" />
-                            <div className="bg-gradient-to-t from-black to-transparent h-screen w-full absolute z-30" />
+                            <div className="bg-gradient-to-b from-black to-transparent  h-96 lg:h-screen  w-full absolute z-20" />
+                            <img src={TourPackage} className="absolute z-10 w-full object-cover  h-96 lg:h-screen " />
+                            <div className="bg-gradient-to-t from-black to-transparent h-96 lg:h-screen w-full absolute z-30" />
 
+                        </div>
+
+                        <div className="flex justify-between items-center w-full absolute z-40 lg:mt-[30vh]">
+                            <Parallax speed={10}>
+
+                                <div className="bg-[#507D40] opacity-50 m-10  rounded-2xl border p-5">
+
+                                    <p className="font-Tektur text-xl sm:text-2xl md:text-2xl lg:text-3xl text-white">Uncover Limitless Adventures</p>
+                                    <p className="font-Genos text-gray-50 sm:text-sm text-xs md:text-sm lg:text-2xl xl:text-2xl">Embark on a journey that transcends the ordinary. Our curated collection of limitless adventures awaits, promising to redefine your perception of exploration. Immerse yourself in a tapestry of extraordinary experiences designed to push boundaries and fuel the fire of your adventurous spirit. Discover the extraordinary with us, where every moment is a step into the unknown.</p>
+
+                                    <div className="flex gap-3 mt-10 mx-auto items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
+                                        <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">EXPLORE NOW</p>
+                                        <div className="bg-black rounded-full">
+                                            <img src={Arraw} className="w-5 m-2  h-fit " />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Parallax>
+
+                            <Parallax speed={-10}>
+
+                                <div className="m-10 rounded-lg shadow-2xl bg-gradient-to-br from-yellow-50 to-yellow-300 p-2 lg:block hidden">
+                                    <SimpleImageSlider
+                                        width={484}
+                                        height={340}
+                                        images={images}
+                                        showBullets={true}
+                                        showNavs={true}
+                                    />
+                                </div>
+                            </Parallax>
                         </div>
                     </div>
 
-                    <div className="flex justify-between w-full absolute z-40 md:mt-[30vh]">
-                        <div className="bg-[#507D40] opacity-50 m-10 lg:w-96 lg:h-[360px] rounded-2xl border p-5">
+                    <div className="md:mt-[110vh] mt-[50vh]">
+                        <p className="text-center mt-5 mx-3 md:mx-0 md:mt-0 2xl:h-[405px] xl:h-[230px] lg:h-[175px] md:h-[130px] sm:h-[100px] h-[80px] md:text-[40px] font-Tektur font-bold text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px] bg-gradient-to-bl from-[#DBFFD5] to-[#dbffd56b] bg-clip-text text-transparent"
+                        >Elemental Escapes: <br /> Nature's Bounty Awaits</p>
 
-                            <p className="font-Tektur text-xl text-white">Uncover Limitless Adventures</p>
-                            <p className="font-Genos text-gray-50">Embark on a journey that transcends the ordinary. Our curated collection of limitless adventures awaits, promising to redefine your perception of exploration. Immerse yourself in a tapestry of extraordinary experiences designed to push boundaries and fuel the fire of your adventurous spirit. Discover the extraordinary with us, where every moment is a step into the unknown.</p>
+                        <p className="font-Genos lg:w-4/5 md:w-2/3 text-white text-center mx-auto 2xl:text-2xl xl:text-xl w-11/12 ">Each adventure is a gateway to a realm where earth, air, water, and fire converge to create unforgettable moments. Join us on a journey where the elements come alive, offering serenity, excitement, and awe-inspiring landscapes at every turn.</p>
+                        <img src={PathaLogo} className="absolute right-0 md:block hidden" />
+                        <img src={Group30} alt="" />
 
-                            <div className="flex gap-3 mt-10 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
-                                <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">EXPLORE NOW</p>
+                        <div className="w-full flex justify-center items-center mt-10">
+                            <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
+                                <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">Start Exploring</p>
                                 <div className="bg-black rounded-full">
                                     <img src={Arraw} className="w-5 m-2  h-fit " />
                                 </div>
                             </div>
                         </div>
 
-                        <div className="m-10 rounded-lg shadow-2xl bg-gradient-to-br from-yellow-50 to-yellow-300 p-2 lg:block hidden">
-                            <SimpleImageSlider
-                                width={484}
-                                height={340}
-                                images={images}
-                                showBullets={true}
-                                showNavs={true}
-                            />
-                        </div>
                     </div>
+
+
                 </div>
+                <AdventureAssenHero />
+
+                <Testimonials />
             </ParallaxProvider>
         </div>
     );
