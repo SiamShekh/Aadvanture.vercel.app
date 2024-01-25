@@ -184,11 +184,13 @@ const Home = () => {
                     <div className="max-h-screen">
                         <div className="relative">
                             <div className="bg-gradient-to-b from-black to-transparent h-screen w-full absolute z-20" />
-                            <img src={TourPackage} className="absolute z-10 w-full h-screen" />
+                            <img src={TourPackage} className="absolute z-10 w-full object-cover h-screen" />
+                            <div className="bg-gradient-to-t from-black to-transparent h-screen w-full absolute z-30" />
+
                         </div>
                     </div>
 
-                    <div className="flex justify-between w-full absolute z-40 mt-[30vh]">
+                    <div className="flex justify-between w-full absolute z-40 md:mt-[30vh]">
                         <div className="bg-[#507D40] opacity-50 m-10 lg:w-96 lg:h-[360px] rounded-2xl border p-5">
 
                             <p className="font-Tektur text-xl text-white">Uncover Limitless Adventures</p>
