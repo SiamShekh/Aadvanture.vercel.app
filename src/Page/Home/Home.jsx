@@ -11,6 +11,10 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import TreeObj from "../../assets/tree_sub.png";
 import { TypeAnimation } from "react-type-animation";
+import SloganHere from "../../assets/SloganHere_6.webp"
+import TourPackage from "../../assets/TourPackage.webp"
+import SimpleImageSlider from "react-simple-image-slider";
+
 const Home = () => {
     const [SummitState, setSummitState] = useState(false);
     const [TrekState, setTrekState] = useState(false);
@@ -22,6 +26,18 @@ const Home = () => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, [])
+
+    const images = [
+        { url: "https://i.ibb.co/HT9j7cg/Summit-Canva1.webp" },
+        { url: "https://i.ibb.co/LNzn1rn/Trek3.webp" },
+        { url: "https://www.rayatourism.com/upload_pics/explore.jpg" },
+
+        // { url: "images/3.jpg" },
+        // { url: "images/4.jpg" },
+        // { url: "images/5.jpg" },
+        // { url: "images/6.jpg" },
+        // { url: "images/7.jpg" },
+    ];
 
     return (
         <div className=" bg-black">
@@ -113,7 +129,8 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className={`xl:2xl:xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 -mt-32 ${SummitState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+                    <div className={`xl:2xl:xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${SummitState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
+
                         <img data-aos="fade-left" src="https://i.ibb.co/HT9j7cg/Summit-Canva1.webp" className="h-60 rounded-xl" />
                         <img data-aos="fade-in" src="https://i.ibb.co/hYX1qz6/Summit-Canva2.webp" className="h-60 rounded-xl md:block hidden" />
                         <img data-aos="fade-right" src="https://i.ibb.co/yBsMF1C/Summit-Canva4.webp" className="h-60 lg:block hidden rounded-xl" />
@@ -149,6 +166,52 @@ const Home = () => {
                         <img data-aos="fade-right" src="https://images.squarespace-cdn.com/content/v1/64302b849cd4ae56340e77db/8f5b1bed-da34-4990-b117-9948d67c7b1b/Adventure+boogie+selection-62.jpg" className="h-60 lg:block hidden rounded-xl" />
                     </div>
 
+                    <div className="flex flex-col">
+                        <div className="justify-between hidden md:flex">
+                            <img src={SloganHere} alt="" />
+                            <img src={SloganHere} alt="" />
+                        </div>
+
+                        <div className="md:-mt-80">
+                            <p className="text-center mt-5 mx-3 md:mx-0 md:mt-0 2xl:h-[405px] xl:h-[230px] lg:h-[175px] md:h-[130px] sm:h-[100px] h-[80px] md:text-[40px] font-Tektur font-bold text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px] bg-gradient-to-bl from-[#DBFFD5] to-[#dbffd56b] bg-clip-text text-transparent"
+                            >Unleash Your <br /> Adventurous Spirit Here!</p>
+
+                            <p className="font-Genos lg:w-4/5 md:w-2/3 text-white text-center mx-auto 2xl:text-2xl xl:text-xl w-11/12 ">Indulge in a realm of excitement and discovery as you navigate through our diverse offerings. Your gateway to a world of thrilling possibilities, tailored to ignite your passion for adventure. Dive into unique experiences crafted to satisfy every adventurer's craving for the extraordinary. Let the journey begin!</p>
+                        </div>
+                    </div>
+
+                    {/* Tour Package */}
+                    <div className="max-h-screen">
+                        <div className="relative">
+                            <div className="bg-gradient-to-b from-black to-transparent h-screen w-full absolute z-20" />
+                            <img src={TourPackage} className="absolute z-10 w-full h-screen" />
+                        </div>
+                    </div>
+
+                    <div className="flex justify-between w-full absolute z-40 mt-[30vh]">
+                        <div className="bg-[#507D40] opacity-50 m-10 lg:w-96 lg:h-[360px] rounded-2xl border p-5">
+
+                            <p className="font-Tektur text-xl text-white">Uncover Limitless Adventures</p>
+                            <p className="font-Genos text-gray-50">Embark on a journey that transcends the ordinary. Our curated collection of limitless adventures awaits, promising to redefine your perception of exploration. Immerse yourself in a tapestry of extraordinary experiences designed to push boundaries and fuel the fire of your adventurous spirit. Discover the extraordinary with us, where every moment is a step into the unknown.</p>
+
+                            <div className="flex gap-3 mt-10 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
+                                <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">EXPLORE NOW</p>
+                                <div className="bg-black rounded-full">
+                                    <img src={Arraw} className="w-5 m-2  h-fit " />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="m-10 rounded-lg shadow-2xl bg-gradient-to-br from-yellow-50 to-yellow-300 p-2 lg:block hidden">
+                            <SimpleImageSlider
+                                width={484}
+                                height={340}
+                                images={images}
+                                showBullets={true}
+                                showNavs={true}
+                            />
+                        </div>
+                    </div>
                 </div>
             </ParallaxProvider>
         </div>
