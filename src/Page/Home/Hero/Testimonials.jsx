@@ -1,7 +1,7 @@
 
 const Testimonials = () => {
     return (
-        <div className="lg:mt-[30vh] -mt-[50vh] md:mt-0 xl:mt-[60vh]">
+        <div className="lg:mt-[30vh] -mt-[50vh]  xl:mt-[60vh]">
             <p className="text-center mt-5 mx-3 md:mx-0 md:mt-0 2xl:h-[405px] xl:h-[230px] lg:h-[175px] md:h-[130px] sm:h-[100px] h-[80px] md:text-[40px] font-Tektur font-bold text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px] bg-gradient-to-bl from-[#DBFFD5] to-[#dbffd56b] bg-clip-text text-transparent"
             >Customer Chronicles: <br /> Stories of Adventure</p>
 

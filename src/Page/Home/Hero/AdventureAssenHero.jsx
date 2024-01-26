@@ -5,7 +5,7 @@ import elemet from "../../../assets/Elemnt.webp";
 const AdventureAssenHero = () => {
     return (
         <div>
-            <div className="relative h-screen mt-10">
+            <div className="relative h-screen mt-20">
                 <div className="absolute z-0 top-0 w-full bg-[#7CDD2F] opacity-50 blur-3xl md:h-52 h-40 lg:h-60 xl:h-72" />
 
                 <div className="hidden lg:block">

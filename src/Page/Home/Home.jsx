@@ -17,6 +17,8 @@ import PathaLogo from "../../assets/Qitmeer Logo (11) 1.png";
 import Group30 from "../../assets/Group 30.webp";
 import AdventureAssenHero from "./Hero/AdventureAssenHero";
 import Testimonials from "./Hero/Testimonials";
+import GetInTouch from "./Hero/GetInTouch";
+import { GoArrowRight } from "react-icons/go";
 
 const Home = () => {
     const [SummitState, setSummitState] = useState(false);
@@ -57,9 +59,10 @@ const Home = () => {
                             <p className="text-2xl 2xl:text-5xl font-bold font-Tektur text-white ">Exciting Adventures For Your Discovery</p>
                             <p className="font-Genos text-white 2xl:text-3xl 2xl:mt-10">Step into our realm of curated escapades, where thrill meets exploration. Join us in discovering uncharted territories, embracing the pulse of true adventure.</p>
 
-                            <div className="flex gap-3 items-center 2xl:mt-10">
+                            <div className="flex gap-3 items-center 2xl:mt-10 cursor-pointer">
                                 <p className="font-Tektur font-bold text-[#52FF00] uppercase 2xl:text-3xl text-xl">Learn more</p>
-                                <img src={Arraw} className="w-5 2xl:w-10 h-fit " />
+
+                                <GoArrowRight  className="w-5 text-[#52FF00] 2xl:w-10 h-fit " />
                             </div>
                         </div>
                         <img src={Element} className="hidden opacity-60 md:flex right-0 top-2 h-96 2xl:h-[700px]" />
@@ -72,7 +75,7 @@ const Home = () => {
                         <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
                             <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">GET IN TOUCH</p>
                             <div className="bg-black rounded-full">
-                                <img src={Arraw} className="w-5 m-2  h-fit " />
+                                <GoArrowRight className="w-5 m-2 text-white font-bold  h-fit " />
                             </div>
                         </div>
                     </div>
@@ -120,7 +123,7 @@ const Home = () => {
                             <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
                                 <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">EXPLORE NOW</p>
                                 <div className="bg-black rounded-full">
-                                    <img src={Arraw} className="w-5 m-2  h-fit " />
+                                    <GoArrowRight className="w-5 m-2 text-white font-bold h-fit " />
                                 </div>
                             </div>
                         </div>
@@ -179,9 +182,9 @@ const Home = () => {
 
                     {/* Tour Package */}
                     <div className="max-h-screen block">
-                        <div className="relative">
+                        <div className="xl:relative">
                             <div className="bg-gradient-to-b from-black to-transparent  h-96 lg:h-screen  w-full absolute z-20" />
-                            <img src={TourPackage} className="absolute z-10 w-full object-cover  h-96 lg:h-screen " />
+                            <img src={TourPackage} className="absolute z-10 w-full object-cover  h-96 lg:h-[700px] " />
                             <div className="bg-gradient-to-t from-black to-transparent h-96 lg:h-screen w-full absolute z-30" />
 
                         </div>
@@ -189,15 +192,15 @@ const Home = () => {
                         <div className="flex justify-between items-center w-full absolute z-40 lg:mt-[30vh]">
                             <Parallax speed={10}>
 
-                                <div className="bg-[#507D40] opacity-50 m-10  rounded-2xl border p-5">
-
+                                <div className="bg-[#507D40] m-10  rounded-2xl border p-5">
+                                    
                                     <p className="font-Tektur text-xl sm:text-2xl md:text-2xl lg:text-3xl text-white">Uncover Limitless Adventures</p>
                                     <p className="font-Genos text-gray-50 sm:text-sm text-xs md:text-sm lg:text-2xl xl:text-2xl">Embark on a journey that transcends the ordinary. Our curated collection of limitless adventures awaits, promising to redefine your perception of exploration. Immerse yourself in a tapestry of extraordinary experiences designed to push boundaries and fuel the fire of your adventurous spirit. Discover the extraordinary with us, where every moment is a step into the unknown.</p>
 
                                     <div className="flex gap-3 mt-10 mx-auto items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
                                         <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">EXPLORE NOW</p>
                                         <div className="bg-black rounded-full">
-                                            <img src={Arraw} className="w-5 m-2  h-fit " />
+                                            <GoArrowRight className="w-5 m-2 text-white font-bold h-fit " />
                                         </div>
                                     </div>
                                 </div>
@@ -218,7 +221,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="md:mt-[110vh] mt-[50vh]">
+                    <div className="md:mt-[700px] mt-96">
                         <p className="text-center mt-5 mx-3 md:mx-0 md:mt-0 2xl:h-[405px] xl:h-[230px] lg:h-[175px] md:h-[130px] sm:h-[100px] h-[80px] md:text-[40px] font-Tektur font-bold text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px] bg-gradient-to-bl from-[#DBFFD5] to-[#dbffd56b] bg-clip-text text-transparent"
                         >Elemental Escapes: <br /> Nature's Bounty Awaits</p>
 
@@ -230,7 +233,7 @@ const Home = () => {
                             <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
                                 <p className="font-Tektur font-semibold text-black uppercase 2xl:text-3xl text-xl">Start Exploring</p>
                                 <div className="bg-black rounded-full">
-                                    <img src={Arraw} className="w-5 m-2  h-fit " />
+                                    <GoArrowRight className="w-5 m-2 text-white font-bold h-fit " />
                                 </div>
                             </div>
                         </div>
@@ -242,6 +245,8 @@ const Home = () => {
                 <AdventureAssenHero />
 
                 <Testimonials />
+
+                <GetInTouch/>
             </ParallaxProvider>
         </div>
     );
