@@ -17,12 +17,29 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Genos:wght@400;500;600;700;800;900&family=Tektur:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-    
+
 </head>
 
 <body>
+
+  <div id="preLoader" class="w-full h-screen flex justify-center items-center flex-col bg-white dark:bg-black">
+    <p class="text-2xl font-Tektur">Loading...</p>
+    <img src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-11-849_512.gif" class="h-1/3">
+  </div>
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    let preLoader = document.getElementById("preLoader");
+    window.addEventListener("load", () => {
+      preLoader.style.display = "none";
+    })
+  </script>
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  </script>
 </body>
 
 </html>
