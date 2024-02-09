@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="mx-auto h-fit w-full relative bg-black">
             <div className="pt-20 flex justify-center items-center flex-col max-w-[80vw] mx-auto">
-                <img src={Logo} alt="" />
+                <img draggable="false" src={Logo} alt="" />
                 <p className="font-Genos custom-justify text-justify 2xl:text-2xl xl:text-xl lg:text-xl md:text-sm sm:text-xs  text-[#DBFFD5]">Take your passion for adventure to the next level by becoming a member of our exclusive Adventure Club. Enjoy benefits such as early access to trips, special discounts, and insider insights. Connect with like-minded adventurers, share tips, and receive personalized recommendations. Embrace a community where the thrill of exploration knows no bounds. Sign up today and elevate your journey with the Adventure Club experience.</p>
 
                 <div className="flex gap-5">
@@ -46,7 +46,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <img src={Gass} className="w-full 2xl:-mt-96 xl:-mt-64 lg:-mt-40 md:-mt-36 sm:-mt-24 -mt-20" />
+            <img draggable="false" src={Gass} className="w-full 2xl:-mt-96 xl:-mt-64 lg:-mt-40 md:-mt-36 sm:-mt-24 -mt-20" />
 
         </div>
     );

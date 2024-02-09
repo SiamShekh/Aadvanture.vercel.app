@@ -11,7 +11,7 @@ const Testimonials = () => {
                 <div id="slide1" className="carousel-item relative lg:h-[450px] 2xl:h-[600px] h-96 w-full">
                     <div className="md:flex bg-[#0B2B04] p-5 my-10 mx-20 rounded-xl border-yellow-400 border-2">
                         <div className="flex flex-1">
-                            <img src="https://www.kstdc.co/wp-content/themes/kstdc/images/inbg.jpg" className="object-cover md:rounded-tl-xl md:rounded-bl-xl md:h-full w-full h-20 rounded-lg md:rounded-none" />
+                            <img draggable="false" src="https://www.kstdc.co/wp-content/themes/kstdc/images/inbg.jpg" className="object-cover md:rounded-tl-xl md:rounded-bl-xl md:h-full w-full h-20 rounded-lg md:rounded-none" />
                         </div>
                         <div className="flex flex-1 flex-col md:px-5 md:mt-0 mt-5">
                             <p className="md:text-4xl text-white xl:text-6xl 2xl:text-7xl text-[10px] line-clamp-2 font-Tektur ">Trailblazer's Triumph: Tales from the Top</p>
@@ -27,7 +27,7 @@ const Testimonials = () => {
                 <div id="slide2" className="carousel-item relative lg:h-[450px] 2xl:h-[600px] h-96 w-full">
                     <div className="md:flex bg-[#0B2B04] p-5 my-10 mx-20 rounded-xl border-yellow-400 border-2">
                         <div className="flex flex-1">
-                            <img src="https://static.toiimg.com/photo/67382132.cms" className="object-cover md:rounded-tl-xl md:rounded-bl-xl md:h-full h-20 rounded-lg w-full md:rounded-none" />
+                            <img draggable="false" src="https://static.toiimg.com/photo/67382132.cms" className="object-cover md:rounded-tl-xl md:rounded-bl-xl md:h-full h-20 rounded-lg w-full md:rounded-none" />
                         </div>
                         <div className="flex flex-1 flex-col md:px-5 md:mt-0 mt-5">
                             <p className="md:text-4xl text-white xl:text-6xl 2xl:text-7xl text-[10px] line-clamp-2 font-Tektur ">Nature's Embrace: Trailblazer Tales</p>
@@ -44,7 +44,7 @@ const Testimonials = () => {
                 <div id="slide3" className="carousel-item lg:h-[450px] 2xl:h-[600px] h-96 relative w-full">
                     <div className="md:flex bg-[#0B2B04] p-5 my-10 mx-20 rounded-xl border-yellow-400 border-2">
                         <div className="flex flex-1">
-                            <img src="https://blog.daraz.com.bd/wp-content/uploads/2019/12/Tours-and-Travel.jpg" className="object-cover md:rounded-tl-xl md:rounded-bl-xl md:h-full w-full h-20 rounded-lg md:rounded-none" />
+                            <img draggable="false" src="https://blog.daraz.com.bd/wp-content/uploads/2019/12/Tours-and-Travel.jpg" className="object-cover md:rounded-tl-xl md:rounded-bl-xl md:h-full w-full h-20 rounded-lg md:rounded-none" />
                         </div>
                         <div className="flex flex-1 flex-col md:px-5 md:mt-0 mt-5">
                             <p className="md:text-4xl text-white xl:text-6xl 2xl:text-7xl line-clamp-2 text-[10px] font-Tektur ">Peak Pursuits: Testimonials from Summit Seekers</p>
@@ -60,7 +60,7 @@ const Testimonials = () => {
                 <div id="slide4" className="carousel-item lg:h-[450px] 2xl:h-[600px] h-96 relative w-full">
                     <div className="md:flex bg-[#0B2B04] p-5 my-10 mx-20 rounded-xl border-yellow-400 border-2">
                         <div className="flex flex-1">
-                            <img src="https://img.freepik.com/premium-photo/travel-world-monuments-concept_117023-14.jpg" className="object-cover md:rounded-tl-xl w-full md:rounded-bl-xl md:h-full h-20 rounded-lg md:rounded-none" />
+                            <img draggable="false" src="https://img.freepik.com/premium-photo/travel-world-monuments-concept_117023-14.jpg" className="object-cover md:rounded-tl-xl w-full md:rounded-bl-xl md:h-full h-20 rounded-lg md:rounded-none" />
                         </div>
                         <div className="flex flex-1 flex-col md:px-5 md:mt-0 mt-5">
                             <p className="md:text-4xl text-white xl:text-6xl 2xl:text-7xl line-clamp-2 text-[10px] font-Tektur ">Elevation Euphoria: Pinnacle Praise</p>

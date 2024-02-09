@@ -44,7 +44,7 @@ const AdvanceBanner = () => {
 
                 <p className="md:w-1/3 text-center text-white text-[10px] mx-2 xs:text-[12px] xl:text-[15px] xl:mt-10 2xl:mt-16 md:text-[8px] font-medium font-mono 2xl:text-[30px]  z-20">Unveil Worlds Unseen. Adventures Await Your Call. Explore, Dare, and Thrive. Start Your Journey Today</p>
 
-                <img src={Line} className="z-20 mt-40 md:mt-10 lg:mt-16 xl:mt-16 2xl:mt-40 2xl:w-2" />
+                <img draggable="false" src={Line} className="z-20 mt-40 md:mt-10 lg:mt-16 xl:mt-16 2xl:mt-40 2xl:w-2" />
             </div>
         )
     };

@@ -23,7 +23,7 @@ const Nav = () => {
             >
                 <div className="flex gap-10 flex-col items-center w-full h-full bg-slate-800">
                     <div>
-                        <img src={Logo} className="mt-5" />
+                        <img draggable="false" src={Logo} className="mt-5" />
                     </div>
 
                     <div className="items-center justify-around gap-10 flex-col flex">
@@ -38,7 +38,7 @@ const Nav = () => {
 
             <div className="h-[80px] flex items-center justify-between relative mx-auto">
                 <div className="flex justify-start absolute left-3 md:left-10">
-                    <img className="h-10" src={Logo} />
+                    <img draggable="false" className="h-10" src={Logo} />
                 </div>
 
                 <div className="flex items-center justify-end">

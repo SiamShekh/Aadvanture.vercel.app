@@ -15,7 +15,7 @@ const AdventureAssenHero = () => {
                     </Parallax>
 
                     <Parallax speed={-10} className="absolute z-10 -mt-32 md:-mt-36 lg:-mt-44 2xl:-mt-80 ">
-                        <img src={elemet} className="object-cover w-screen " />
+                        <img draggable="false" src={elemet} className="object-cover w-screen " />
                     </Parallax>
                 </div>
 
@@ -26,7 +26,7 @@ const AdventureAssenHero = () => {
                     </Parallax>
 
                     <Parallax className="absolute z-10 -mt-32 md:-mt-36 lg:-mt-44 2xl:-mt-80 ">
-                        <img src={elemet} className="object-cover w-screen " />
+                        <img draggable="false" src={elemet} className="object-cover w-screen " />
                     </Parallax>
                 </div>
             </div>

@@ -59,11 +59,11 @@ const Home = () => {
                                 <GoArrowRight  className="w-5 text-[#52FF00] 2xl:w-10 h-fit " />
                             </div>
                         </div>
-                        <img src={Element} className="hidden opacity-60 md:flex right-0 top-2 h-96 2xl:h-[700px]" />
+                        <img draggable="false" src={Element} className="hidden opacity-60 md:flex right-0 top-2 h-96 2xl:h-[700px]" />
 
                     </div>
 
-                    <img src={Pahar} className="-mt-10 md:-mt-36 2xl:-mt-96 w-full" />
+                    <img draggable="false" src={Pahar} className="-mt-10 md:-mt-36 2xl:-mt-96 w-full" />
 
                     <div className="w-full flex justify-center items-center">
                         <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
@@ -74,7 +74,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <img src={TreeObj} className="opacity-50 hidden md:-mt-20 h-96 xl:h-[500px] 2xl:h-[700px] md:flex justify-between" />
+                    <img draggable="false" src={TreeObj} className="opacity-50 hidden md:-mt-20 h-96 xl:h-[500px] 2xl:h-[700px] md:flex justify-between" />
                     <div className="flex flex-col justify-center items-center md:-mt-52 lg:-mt-60 xl:-mt-56 2xl:-mt-[530px] mt-10">
                         <TypeAnimation
                             style={{ whiteSpace: 'pre-line', display: 'block' }}
@@ -125,45 +125,45 @@ const Home = () => {
 
                     <div className={`xl:2xl:xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${SummitState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
 
-                        <img src="https://i.ibb.co/HT9j7cg/Summit-Canva1.webp" className="h-60 rounded-xl" />
-                        <img src="https://i.ibb.co/hYX1qz6/Summit-Canva2.webp" className="h-60 rounded-xl md:block hidden" />
-                        <img src="https://i.ibb.co/yBsMF1C/Summit-Canva4.webp" className="h-60 lg:block hidden rounded-xl" />
+                        <img draggable="false" src="https://i.ibb.co/HT9j7cg/Summit-Canva1.webp" className="h-60 rounded-xl" />
+                        <img draggable="false" src="https://i.ibb.co/hYX1qz6/Summit-Canva2.webp" className="h-60 rounded-xl md:block hidden" />
+                        <img draggable="false" src="https://i.ibb.co/yBsMF1C/Summit-Canva4.webp" className="h-60 lg:block hidden rounded-xl" />
                     </div>
 
                     <div className={`xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${TrekState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
-                        <img src="https://i.ibb.co/LNzn1rn/Trek3.webp" className="h-60 rounded-xl" />
-                        <img src="https://i.ibb.co/TWJKLLW/Trek1.webp" className="h-60 rounded-xl md:block hidden" />
-                        <img src="https://i.ibb.co/Wy51YCw/Trek2.webp" className="h-60 rounded-xl lg:block hidden" />
+                        <img draggable="false" src="https://i.ibb.co/LNzn1rn/Trek3.webp" className="h-60 rounded-xl" />
+                        <img draggable="false" src="https://i.ibb.co/TWJKLLW/Trek1.webp" className="h-60 rounded-xl md:block hidden" />
+                        <img draggable="false" src="https://i.ibb.co/Wy51YCw/Trek2.webp" className="h-60 rounded-xl lg:block hidden" />
                     </div>
 
                     <div className={`xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${ExploreState ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
-                        <img src="https://images.unsplash.com/photo-1506064549099-34b18723e8c9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXhwbG9yZSUyMHRoZSUyMHdvcmxkfGVufDB8fDB8fHww" className="h-60 rounded-xl" />
-                        <img src="https://www.rayatourism.com/upload_pics/explore.jpg" className="h-60 rounded-xl md:block hidden" />
-                        <img src="https://www.203challenges.com/wp-content/uploads/2017/12/nathaniel-kohfield-337185-e1514446401837.jpg" className="h-60 rounded-xl lg:block hidden" />
+                        <img draggable="false" src="https://images.unsplash.com/photo-1506064549099-34b18723e8c9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXhwbG9yZSUyMHRoZSUyMHdvcmxkfGVufDB8fDB8fHww" className="h-60 rounded-xl" />
+                        <img draggable="false" src="https://www.rayatourism.com/upload_pics/explore.jpg" className="h-60 rounded-xl md:block hidden" />
+                        <img draggable="false" src="https://www.203challenges.com/wp-content/uploads/2017/12/nathaniel-kohfield-337185-e1514446401837.jpg" className="h-60 rounded-xl lg:block hidden" />
                     </div>
 
                     <div className={`xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${UrbanExploration_State ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
-                        <img src="https://ipt.imgix.net/205429/x/0/" className="h-60 rounded-xl" />
-                        <img src="https://cdn.shopify.com/s/files/1/0493/9834/9974/files/8_bc31f69f-4f1a-469e-9303-c93b3220e925_480x480.png" className="h-60 rounded-xl md:block hidden" />
-                        <img src="https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/leonardcnrs_2_72dpi.jpg" className="h-60 rounded-xl lg:block hidden" />
+                        <img draggable="false" src="https://ipt.imgix.net/205429/x/0/" className="h-60 rounded-xl" />
+                        <img draggable="false" src="https://cdn.shopify.com/s/files/1/0493/9834/9974/files/8_bc31f69f-4f1a-469e-9303-c93b3220e925_480x480.png" className="h-60 rounded-xl md:block hidden" />
+                        <img draggable="false" src="https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/leonardcnrs_2_72dpi.jpg" className="h-60 rounded-xl lg:block hidden" />
                     </div>
 
                     <div className={`xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${Ride_State ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
-                        <img src="https://static01.nyt.com/images/2023/07/02/multimedia/29ROLLERCOASTER-02-lwgc/29ROLLERCOASTER-02-lwgc-videoSixteenByNine3000.jpg" className="h-60 rounded-xl" />
-                        <img src="https://wistatefair.com/fair/wp-content/uploads/2013/04/Kids-Ride-Carousel.jpg" className="h-60 rounded-xl md:block hidden" />
-                        <img src="https://funfairamusementrides.com.au/images/room-list/ranger-ride-hire-brisbane.jpg" className="h-60 rounded-xl lg:block hidden" />
+                        <img draggable="false" src="https://static01.nyt.com/images/2023/07/02/multimedia/29ROLLERCOASTER-02-lwgc/29ROLLERCOASTER-02-lwgc-videoSixteenByNine3000.jpg" className="h-60 rounded-xl" />
+                        <img draggable="false" src="https://wistatefair.com/fair/wp-content/uploads/2013/04/Kids-Ride-Carousel.jpg" className="h-60 rounded-xl md:block hidden" />
+                        <img draggable="false" src="https://funfairamusementrides.com.au/images/room-list/ranger-ride-hire-brisbane.jpg" className="h-60 rounded-xl lg:block hidden" />
                     </div>
 
                     <div className={`xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${SkyDriveing_State ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
-                        <img src="https://www.nativeplanet.com/img/2015/07/13-1436778303-ambyvalley1.jpg" className="h-60 rounded-xl" />
-                        <img src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2017/6/22/0/GettyImages-643320488-palm-jumeirah-skydive-dubai.jpg.rend.hgtvcom.1280.1280.suffix/1498150383633.jpeg" className="h-60 rounded-xl md:block hidden" />
-                        <img src="https://images.squarespace-cdn.com/content/v1/64302b849cd4ae56340e77db/8f5b1bed-da34-4990-b117-9948d67c7b1b/Adventure+boogie+selection-62.jpg" className="h-60 lg:block hidden rounded-xl" />
+                        <img draggable="false" src="https://www.nativeplanet.com/img/2015/07/13-1436778303-ambyvalley1.jpg" className="h-60 rounded-xl" />
+                        <img draggable="false" src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2017/6/22/0/GettyImages-643320488-palm-jumeirah-skydive-dubai.jpg.rend.hgtvcom.1280.1280.suffix/1498150383633.jpeg" className="h-60 rounded-xl md:block hidden" />
+                        <img draggable="false" src="https://images.squarespace-cdn.com/content/v1/64302b849cd4ae56340e77db/8f5b1bed-da34-4990-b117-9948d67c7b1b/Adventure+boogie+selection-62.jpg" className="h-60 lg:block hidden rounded-xl" />
                     </div>
 
                     <div className="flex flex-col">
                         <div className="justify-between hidden md:flex">
-                            <img src={SloganHere} alt="" />
-                            <img src={SloganHere} alt="" />
+                            <img draggable="false" src={SloganHere} alt="" />
+                            <img draggable="false" src={SloganHere} alt="" />
                         </div>
 
                         <div className="md:-mt-80">
@@ -178,7 +178,7 @@ const Home = () => {
                     <div className="max-h-screen block">
                         <div className="xl:relative">
                             <div className="bg-gradient-to-b from-black to-transparent  h-96 lg:h-screen  w-full absolute z-20" />
-                            <img src={TourPackage} className="absolute z-10 w-full object-cover  h-96 lg:h-[700px] " />
+                            <img draggable="false" src={TourPackage} className="absolute z-10 w-full object-cover  h-96 lg:h-[700px] " />
                             <div className="bg-gradient-to-t from-black to-transparent h-96 lg:h-screen w-full absolute z-30" />
 
                         </div>
@@ -220,8 +220,8 @@ const Home = () => {
                         >Elemental Escapes: <br /> Nature's Bounty Awaits</p>
 
                         <p className="font-Genos lg:w-4/5 md:w-2/3 text-white text-center mx-auto 2xl:text-2xl xl:text-xl w-11/12 ">Each adventure is a gateway to a realm where earth, air, water, and fire converge to create unforgettable moments. Join us on a journey where the elements come alive, offering serenity, excitement, and awe-inspiring landscapes at every turn.</p>
-                        <img src={PathaLogo} className="absolute right-0 md:block hidden" />
-                        <img src={Group30} alt="" />
+                        <img draggable="false" src={PathaLogo} className="absolute right-0 md:block hidden" />
+                        <img draggable="false" src={Group30} alt="" />
 
                         <div className="w-full flex justify-center items-center mt-10">
                             <div className="flex gap-3 items-center 2xl:mt-10 w-fit  bg-[#B9FF24] shadow-2xl hover:bg-[#baff24be] cursor-pointer px-5 py-2 rounded-full">
