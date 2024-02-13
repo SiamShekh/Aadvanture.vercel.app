@@ -21,7 +21,7 @@ const AdvanceBanner = () => {
             //   <div className="inset center">
             //     <h1 className="headline white">Discover Adventures!</h1>
             //   </div>
-            <div className="m-auto w-full h-full flex-col flex justwify-center items-center text-center xl:mt-[30vh] lg:mt-[30vh] md:mt-[50vh] mt-[50vh]  absolute">
+            <div className="m-auto w-full flex-col flex justwify-center items-center text-center xl:mt-[30vh] lg:mt-[30vh] md:mt-[50vh] mt-[50vh]  absolute">
                 <TypeAnimation
                     className="text-center text-white text-5xl sm:text-3xl md:text-5xl xl:text-[100px] 2xl:text-[200px] lg:text-7xl font-bold font-Tektur z-10"
                     sequence={[

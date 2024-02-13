@@ -7,7 +7,7 @@ const GetInTouch = () => {
         <div className="bg-[#0B5100] w-full lg:h-[500px] md:py-20 py-10 lg:py-0 md:p-0 p-10 border-b-2 border-t-2 relative">
             <img draggable="false" src={GetIntoTouch1} className="absolute hidden md:block -top-14" />
             <img draggable="false" src={GetIntoTouch2} className="absolute hidden md:block -bottom-8 right-0" />
-            <div className="flex justify-center items-center h-full w-full">
+            <div className="flex justify-center items-center  w-full">
                 <div>
                     <p className="font-Tektur xl:text-7xl text-xl sm:text-sm font-bold text-white md:text-2xl  md:text-center">Get in Touch: <br /> Connect with Us</p>
                     <p className="font-Genos md:w-3/5 lg:w-3/4 text-justify md:text-center text-white mx-auto">We're here to assist you on your journey. Whether you have questions, need assistance, or just want to share your excitement about upcoming adventures, we welcome your contact.</p>

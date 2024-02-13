@@ -20,17 +20,17 @@
 
 </head>
 
-<body>
+<body class="">
 
-  <div id="relativeCointiner" class="relative overflow-hidden">
+  <div id="relativeCointiner" class="relative overflow-hidden h-[100vh]">
 
-    <div id="preLoader" class="absolute z-10  w-full h-screen flex flex-col justify-center items-center">
+    <div id="preLoader" class="absolute z-10  w-full flex flex-col justify-center items-center">
       <img src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif" class="w-1/3 mx-auto">
       
       <p class="text-7xl font-Tektur text-white">Loading</p>
     </div>
 
-    <div id="root" class="blur-md"></div>
+    <div id="root" class="blur-md overflow-hidden w-screen"></div>
   </div>
 
   <script type="module" src="/src/main.jsx"></script>
@@ -40,6 +40,8 @@
 
       document.getElementById("preLoader").style.display = "none";
       document.getElementById("root").classList.remove('blur-md');
+      document.getElementById("relativeCointiner").classList.remove('h-[100vh]');
+
 
     })
   </script>

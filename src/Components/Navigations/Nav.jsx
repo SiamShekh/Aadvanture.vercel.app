@@ -21,7 +21,7 @@ const Nav = () => {
                 overlayClassName="#000"
                 className='bg-slate-500'
             >
-                <div className="flex gap-10 flex-col items-center w-full h-full bg-slate-800">
+                <div className="flex gap-10 flex-col items-center w-full  bg-slate-800">
                     <div>
                         <img draggable="false" src={Logo} className="mt-5" />
                     </div>
