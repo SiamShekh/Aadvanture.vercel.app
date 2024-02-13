@@ -22,19 +22,24 @@
 
 <body>
 
-  <div id="preLoader" class="w-full h-screen flex justify-center items-center flex-col bg-black dark:bg-black">
-    <img draggable="false"  src="https://media.tenor.com/bXB0Xpu_HjAAAAAi/rock-adventure.gif" class="h-screen object-cover w-full">
+  <div id="relativeCointiner" class="relative overflow-hidden">
+
+    <div id="preLoader" class="absolute z-10  w-full h-screen flex flex-col justify-center items-center">
+      <img src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif" class="w-1/3 mx-auto">
+      
+      <p class="text-7xl font-Tektur text-white">Loading</p>
+    </div>
+
+    <div id="root" class="blur-md"></div>
   </div>
 
-  <div id="root" class="hidden"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script>
-    let preLoader = document.getElementById("preLoader");
-    let root = document.getElementById("root");
-
+    
     window.addEventListener("load", () => {
-      preLoader.style.display = "none";
-      root.style.display = "inline";
+
+      document.getElementById("preLoader").style.display = "none";
+      document.getElementById("root").classList.remove('blur-md');
 
     })
   </script>
