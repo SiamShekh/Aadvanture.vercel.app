@@ -5,8 +5,9 @@ import elemet from "../../../assets/Elemnt.webp";
 const AdventureAssenHero = () => {
     return (
         <div>
-            <div className="relative h-screen mt-20">
-                <div className="absolute z-0 top-0 w-full bg-[#7CDD2F] opacity-50 blur-3xl md:h-52 h-40 lg:h-60 xl:h-72" />
+            <div className="relative mt-20 h-[50vh] sm:[40vh] lg:h-screen ">
+                <div className="absolute z-0 top-0 w-full bg-[#7CDD2F] opacity-50 hidden lg:block blur-3xl md:h-52 h-40 lg:h-60 xl:h-72" />
+                <div className="absolute z-0 top-0 w-full bg-[#031403] opacity-50 blur-3xl md:h-52 block lg:hidden h-40 lg:h-60 xl:h-72" />
 
                 <div className="hidden lg:block">
                     <Parallax speed={10}>
@@ -29,7 +30,10 @@ const AdventureAssenHero = () => {
                         <img draggable="false" src={elemet} className="object-cover w-screen " />
                     </Parallax>
                 </div>
+
+                
             </div>
+
         </div>
     );
 };

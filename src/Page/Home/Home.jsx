@@ -3,9 +3,8 @@ import AdvanceBanner from "./Hero/AdvanceBanner";
 import "../../../src/index.css"
 import ListItem from "./ListItem_Banner/ListItem";
 import Element from "../../assets/eliment.png";
-import Arraw from "../../assets/Arrow 5.png";
 import Pahar from "../../assets/Group 25.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import TreeObj from "../../assets/tree_sub.png";
 import { TypeAnimation } from "react-type-animation";
 import SloganHere from "../../assets/SloganHere_6.webp"
@@ -17,6 +16,7 @@ import AdventureAssenHero from "./Hero/AdventureAssenHero";
 import Testimonials from "./Hero/Testimonials";
 import GetInTouch from "./Hero/GetInTouch";
 import { GoArrowRight } from "react-icons/go";
+import squva_driving from "../../assets/image/squva_driving.webp";
 
 const Home = () => {
     const [SummitState, setSummitState] = useState(false);
@@ -56,7 +56,7 @@ const Home = () => {
                             <div className="flex gap-3 items-center 2xl:mt-10 cursor-pointer">
                                 <p className="font-Tektur font-bold text-[#52FF00] uppercase 2xl:text-3xl text-xl">Learn more</p>
 
-                                <GoArrowRight  className="w-5 text-[#52FF00] 2xl:w-10 h-fit " />
+                                <GoArrowRight className="w-5 text-[#52FF00] 2xl:w-10 h-fit " />
                             </div>
                         </div>
                         <img draggable="false" src={Element} className="hidden opacity-60 md:flex right-0 top-2 h-96 2xl:h-[700px]" />
@@ -155,7 +155,7 @@ const Home = () => {
                     </div>
 
                     <div className={`xl:2xl:-mt-60 lg:-mt-48 md:-mt-36 -mt-32 ${SkyDriveing_State ? 'flex' : 'hidden '} max-h-60 mx-auto gap-2 justify-evenly items-center w-full`}>
-                        <img draggable="false" src="https://www.nativeplanet.com/img/2015/07/13-1436778303-ambyvalley1.jpg" className="h-60 rounded-xl" />
+                        <img draggable="false" src={squva_driving} className="h-60 rounded-xl" />
                         <img draggable="false" src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2017/6/22/0/GettyImages-643320488-palm-jumeirah-skydive-dubai.jpg.rend.hgtvcom.1280.1280.suffix/1498150383633.jpeg" className="h-60 rounded-xl md:block hidden" />
                         <img draggable="false" src="https://images.squarespace-cdn.com/content/v1/64302b849cd4ae56340e77db/8f5b1bed-da34-4990-b117-9948d67c7b1b/Adventure+boogie+selection-62.jpg" className="h-60 lg:block hidden rounded-xl" />
                     </div>
@@ -170,16 +170,16 @@ const Home = () => {
                             <p className="text-center mt-5 mx-3 md:mx-0 md:mt-0 2xl:h-[405px] xl:h-[230px] lg:h-[175px] md:h-[130px] sm:h-[100px] h-[80px] md:text-[40px] font-Tektur font-bold text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px] bg-gradient-to-bl from-[#DBFFD5] to-[#dbffd56b] bg-clip-text text-transparent"
                             >Unleash Your <br /> Adventurous Spirit Here!</p>
 
-                            <p className="font-Genos lg:w-4/5 md:w-2/3 text-white text-center mx-auto 2xl:text-2xl xl:text-xl w-11/12 ">Indulge in a realm of excitement and discovery as you navigate through our diverse offerings. Your gateway to a world of thrilling possibilities, tailored to ignite your passion for adventure. Dive into unique experiences crafted to satisfy every adventurer's craving for the extraordinary. Let the journey begin!</p>
+                            <p className="font-Genos lg:w-4/5 md:w-2/3 text-white text-center mx-auto 2xl:text-2xl xl:text-xl w-11/12 ">{"Indulge in a realm of excitement and discovery as you navigate through our diverse offerings. Your gateway to a world of thrilling possibilities, tailored to ignite your passion for adventure. Dive into unique experiences crafted to satisfy every adventurer's craving for the extraordinary. Let the journey begin!"}</p>
                         </div>
                     </div>
 
                     {/* Tour Package */}
                     <div className="max-h-screen block">
                         <div className="xl:relative">
-                            <div className="bg-gradient-to-b from-black to-transparent  h-96 lg:h-screen  w-full absolute z-20" />
+                            <div className="bg-gradient-to-b from-black to-transparent  h-96 lg:h-[700px]  w-full absolute z-20" />
                             <img draggable="false" src={TourPackage} className="absolute z-10 w-full object-cover  h-96 lg:h-[700px] " />
-                            <div className="bg-gradient-to-t from-black to-transparent h-96 lg:h-screen w-full absolute z-30" />
+                            <div className="bg-gradient-to-t from-black to-transparent h-96 lg:h-[700px] w-full absolute z-30" />
 
                         </div>
 
@@ -187,7 +187,7 @@ const Home = () => {
                             <Parallax speed={10}>
 
                                 <div className="bg-[#507D40] m-10  rounded-2xl border p-5">
-                                    
+
                                     <p className="font-Tektur text-xl sm:text-2xl md:text-2xl lg:text-3xl text-white">Uncover Limitless Adventures</p>
                                     <p className="font-Genos text-gray-50 sm:text-sm text-xs md:text-sm lg:text-2xl xl:text-2xl">Embark on a journey that transcends the ordinary. Our curated collection of limitless adventures awaits, promising to redefine your perception of exploration. Immerse yourself in a tapestry of extraordinary experiences designed to push boundaries and fuel the fire of your adventurous spirit. Discover the extraordinary with us, where every moment is a step into the unknown.</p>
 
@@ -217,7 +217,7 @@ const Home = () => {
 
                     <div className="md:mt-[700px] mt-96">
                         <p className="text-center mt-5 mx-3 md:mx-0 md:mt-0 2xl:h-[405px] xl:h-[230px] lg:h-[175px] md:h-[130px] sm:h-[100px] h-[80px] md:text-[40px] font-Tektur font-bold text-[25px] sm:text-[30px] 2xl:text-[140px] xl:text-[70px] lg:text-[50px] bg-gradient-to-bl from-[#DBFFD5] to-[#dbffd56b] bg-clip-text text-transparent"
-                        >Elemental Escapes: <br /> Nature's Bounty Awaits</p>
+                        >Elemental Escapes: <br /> {"Nature's Bounty Awaits"}</p>
 
                         <p className="font-Genos lg:w-4/5 md:w-2/3 text-white text-center mx-auto 2xl:text-2xl xl:text-xl w-11/12 ">Each adventure is a gateway to a realm where earth, air, water, and fire converge to create unforgettable moments. Join us on a journey where the elements come alive, offering serenity, excitement, and awe-inspiring landscapes at every turn.</p>
                         <img draggable="false" src={PathaLogo} className="absolute right-0 md:block hidden" />
@@ -240,7 +240,7 @@ const Home = () => {
 
                 <Testimonials />
 
-                <GetInTouch/>
+                <GetInTouch />
             </ParallaxProvider>
         </div>
     );
