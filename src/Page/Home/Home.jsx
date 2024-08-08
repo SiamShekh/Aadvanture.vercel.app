@@ -2,10 +2,10 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import AdvanceBanner from "./Hero/AdvanceBanner";
 import "../../../src/index.css"
 import ListItem from "./ListItem_Banner/ListItem";
-import Element from "../../assets/eliment.png";
-import Pahar from "../../assets/Group 25.png";
+import Element from "../../assets/image/eliment.webp";
+import Pahar from "../../assets/image/Discover/Mountain.webp";
 import { useState } from "react";
-import TreeObj from "../../assets/tree_sub.png";
+import TreeObj from "../../assets/image/tree_sub.webp";
 import { TypeAnimation } from "react-type-animation";
 import SloganHere from "../../assets/SloganHere_6.webp"
 import TourPackage from "../../assets/TourPackage.webp"

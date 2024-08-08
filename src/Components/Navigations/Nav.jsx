@@ -9,7 +9,7 @@ const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-black bg-opacity-75 backdrop-blur-[50px] mx-auto w-full absolute z-30">
+        <div className="backdrop-blur-sm mx-auto w-full absolute z-30 border-b border-white">
 
             <Drawer
                 open={isOpen}

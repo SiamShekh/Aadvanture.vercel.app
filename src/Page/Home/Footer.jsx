@@ -46,7 +46,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <img draggable="false" src={Gass} className="w-full 2xl:-mt-96 xl:-mt-64 lg:-mt-40 md:-mt-36 sm:-mt-24 -mt-20" />
 
         </div>
     );
