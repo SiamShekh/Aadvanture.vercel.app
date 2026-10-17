@@ -1,68 +1,82 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/Logo.webp";
-import Drawer from 'react-modern-drawer';
-import 'react-modern-drawer/dist/index.css';
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
 import { useState } from "react";
 
+const links = [
+  { to: "/", label: "Home" },
+  { to: "/inspire", label: "Get inspire" },
+  { to: "/tour", label: "Go Tour" },
+];
+
+const linkClass = ({ isActive }) =>
+  isActive
+    ? "text-center font-Tektur text-lg font-normal text-lime-300 md:text-[22px]"
+    : "text-center font-Genos text-lg font-normal text-white md:text-xl";
+
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const close = () => setIsOpen(false);
 
-    const [isOpen, setIsOpen] = useState(false);
+  return (
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/80 bg-black/35 backdrop-blur-sm">
+      <div className="mx-auto flex h-16 items-center justify-between px-4 sm:h-20 md:px-10">
+        <NavLink to="/" onClick={close} aria-label="Adventure Discover home">
+          <img draggable="false" src={Logo} alt="" className="h-9 w-auto sm:h-10" />
+        </NavLink>
 
-    return (
-        <div className="backdrop-blur-sm mx-auto w-full absolute z-30 border-b border-white">
+        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          {links.map((link) => (
+            <NavLink key={link.to} to={link.to} className={linkClass} end={link.to === "/"}>
+              {link.label}
+            </NavLink>
+          ))}
+        </nav>
 
-            <Drawer
-                open={isOpen}
-                onClose={() => setIsOpen(!isOpen)}
-                direction='left'
-                overlayColor="#000"
-                lockBackgroundScroll
-                enableOverlay
-                overlayClassName="#000"
-                className='bg-slate-500'
-            >
-                <div className="flex gap-10 flex-col items-center w-full  bg-slate-800">
-                    <div>
-                        <img draggable="false" src={Logo} className="mt-5" />
-                    </div>
+        <button
+          type="button"
+          className="flex h-12 w-12 items-center justify-center rounded-full border border-lime-500 md:hidden"
+          aria-label="Open menu"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen(true)}
+        >
+          <span className="flex w-6 flex-col gap-1.5" aria-hidden="true">
+            <span className="h-0.5 w-4 bg-white" />
+            <span className="h-0.5 w-6 bg-white" />
+            <span className="ml-auto h-0.5 w-5 bg-white" />
+          </span>
+        </button>
+      </div>
 
-                    <div className="items-center justify-around gap-10 flex-col flex">
-                        <NavLink to="/" className={({ isActive }) => isActive ? "text-center text-lime-300 text-[22px] font-normal font-Tektur" : "text-center text-white text-xl font-normal font-Genos"}>Home</NavLink>
-
-                        <NavLink to="/inspire" className={({ isActive }) => isActive ? "text-center text-lime-300 text-[22px] font-normal font-Tektur" : "text-center text-white text-xl font-normal font-Genos"}>Get inspire</NavLink>
-
-                        <NavLink to="/tour" className={({ isActive }) => isActive ? "text-center text-lime-300 text-[22px] font-normal font-Tektur" : "text-center text-white text-xl font-normal font-Genos"}>Go Tour</NavLink>
-                    </div>
-                </div>
-            </Drawer>
-
-            <div className="h-[80px] flex items-center justify-between relative mx-auto">
-                <div className="flex justify-start absolute left-3 md:left-10">
-                    <img draggable="false" className="h-10" src={Logo} />
-                </div>
-
-                <div className="flex items-center justify-end">
-
-                    <div className="items-center justify-around gap-10 absolute right-10 hidden md:flex">
-                        <NavLink to="/" className={({ isActive }) => isActive ? "text-center text-lime-300 text-[22px] font-normal font-Tektur" : "text-center text-white text-xl font-normal font-Genos"}>Home</NavLink>
-
-                        <NavLink to="/inspire" className={({ isActive }) => isActive ? "text-center text-lime-300 text-[22px] font-normal font-Tektur" : "text-center text-white text-xl font-normal font-Genos"}>Get inspire</NavLink>
-
-                        <NavLink to="/tour" className={({ isActive }) => isActive ? "text-center text-lime-300 text-[22px] font-normal font-Tektur" : "text-center text-white text-xl font-normal font-Genos"}>Go Tour</NavLink>
-                    </div>
-
-                    <div className="flex justify-center md:hidden items-center" onClick={() => setIsOpen(!isOpen)}>
-                        <div className="w-[25px] h-[0px] right-[22px] md:right-[50px] top-[26px] absolute border-2 border-white"></div>
-                        <div className="w-[40px] h-[0px] right-[22px] md:right-[50px] top-[38px] absolute border-2 border-white"></div>
-                        <div className="w-[26px] h-[0px] right-[35px] md:right-[64px] top-[50px] absolute border-2 border-white"></div>
-                        <div className="w-[60px] h-[60px] right-3 md:right-10 top-[10px] absolute rounded-full border border-lime-500" />
-                    </div>
-
-                </div>
-
-            </div>
-        </div >
-    );
+      <Drawer
+        open={isOpen}
+        onClose={close}
+        direction="left"
+        overlayColor="#000"
+        lockBackgroundScroll
+        enableOverlay
+        className="!bg-slate-800"
+      >
+        <div className="flex min-h-full w-full flex-col items-center gap-8 bg-slate-800 px-6 py-10">
+          <img draggable="false" src={Logo} alt="" className="h-12 w-auto" />
+          <nav className="flex w-full flex-col items-center gap-6" aria-label="Mobile">
+            {links.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={linkClass}
+                end={link.to === "/"}
+                onClick={close}
+              >
+                {link.label}
+              </NavLink>
+            ))}
+          </nav>
+        </div>
+      </Drawer>
+    </header>
+  );
 };
 
 export default Nav;

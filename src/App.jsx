@@ -1,18 +1,22 @@
+import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import Nav from "./Components/Navigations/Nav"
+import Nav from "./Components/Navigations/Nav";
 import Footer from "./Page/Home/Footer";
 
 function App() {
-  const html = document.documentElement;
-  html.classList.add("light");
+  useEffect(() => {
+    document.documentElement.classList.add("light");
+  }, []);
 
   return (
-    <>
+    <div className="min-h-screen overflow-x-hidden bg-black text-white">
       <Nav />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
