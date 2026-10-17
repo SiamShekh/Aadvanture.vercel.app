@@ -8,14 +8,14 @@ const AdvanceBanner = () => {
         image:
             background_image,
         translateY: [0, 0],
-        opacity: [1, 0.3],
-        scale: [1.05, 1, "easeOutCubic"],
+        opacity: [1, 0.3, "easeInOutQuad"],
+        scale: [1.05, 1, "easeOutQuad"],
         shouldAlwaysCompleteAnimation: true
     };
 
     const headline = {
-        translateY: [0, 30],
-        scale: [1, 1.05, "easeOutCubic"],
+        translateY: [0, 30, "easeOutQuad"],
+        scale: [1, 1.05, "easeOutQuad"],
         shouldAlwaysCompleteAnimation: true,
         expanded: false,
         children: (

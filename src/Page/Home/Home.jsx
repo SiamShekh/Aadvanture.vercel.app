@@ -209,6 +209,8 @@ const Home = () => {
                                         images={images}
                                         showBullets={true}
                                         showNavs={true}
+                                        slideDuration={0.8}
+                                        useGPURender={true}
                                     />
                                 </div>
                             </Parallax>
